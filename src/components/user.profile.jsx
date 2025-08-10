@@ -1,11 +1,25 @@
-const UserProfile = () => {
+const UserProfile = ({ name, email, phone }) => {
+  // console.log(Props)
+  // // //const {} = props
+  // // Props.name = 'abc'
+   
+  // // let { name, email, phone } = Props  
+  
+  // // name = 'abc'
+
   return (
+    <>
     <div>
       <h1>Users Profile</h1>
-      <p>name : Alice </p>
-      <p>email: alice@gmail.com</p>
-      <p>phone np.: 9765960831</p>
-    </div>
+      <p>name : {Props.name} </p>
+      <p>email: {Props.email}</p>
+      <p>phone np.: {Props.phone }</p>
+      </div>
+      </>
   )
 }
-export default UserProfile 
+export default UserProfile
+
+
+
+
